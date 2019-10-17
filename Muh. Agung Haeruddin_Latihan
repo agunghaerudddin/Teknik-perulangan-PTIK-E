@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int w,x,y,z,bil;
+    cout<<"Masukkan jumlah baris:";
+    cin>>bil;
+    cout<<endl;
+    
+        for (x=bil; x>0; x--) {
+            for (y=0; y<x; y++){
+                cout<<" ";
+            }
+            for (w=0; w<=((bil-x)*2); w++){
+                cout<<"*";
+            }
+            for (z=0; z<x; z++){
+                cout<<" ";
+            }
+            cout<<endl;
+    }
+}
